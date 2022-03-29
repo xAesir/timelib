@@ -1,30 +1,26 @@
 #include <stdio.h>
 
+int daysInMonths[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+
 int leapYearCheck(int year){
     if ((year & 3) == 0 && ((year % 25) != 0 || (year & 15) == 0)){
-        return 1;
+        daysInMonths[1] = 29;
     }
-    return 0;
 }
 
 int main()
 {
     int year, month, day, sumOfDays;
-    year = month = day = sumOfDays = 0;
-
-    int daysInMonths[12] = {31,28,31,30,31,30,31,31,30,31,30,31};
+    year = month = day = sumOfDays = 0; 
     
     do
     {
        printf("Bitte gueltiges Jahr eingeben: ");
         scanf("%i", &year); 
     } while (year < 0);
-
-    if (leapYearCheck(year))
-    {
-       daysInMonths[1] = 29;
-    }
     
+    leapYearCheck(year);
+
     do {
         printf("Bitte gueltigen Monat eingeben: ");
         scanf("%i", &month);
