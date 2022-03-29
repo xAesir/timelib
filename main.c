@@ -26,7 +26,7 @@ int day_of_the_year(int day, int month, int year)
 
     sumOfDays += day;
     
-    printf("Der %i. %i. %i war der %i. Tag des Jahres.", day, month, year, sumOfDays);
+    return sumOfDays;
 }
 
 int main()
