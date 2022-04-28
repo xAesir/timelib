@@ -4,4 +4,6 @@ int exists_date(int day, int month, int year);
 int day_of_the_year(int day, int month, int year);
 void input_date(int *day, int *month, int *year);
 void getWeekday(int day, int month, int year);
+int getWeekdayNumber(int day, int month, int year);
+int has53Weeks(int year);
 void getCalendarWeek(int day, int month, int year);

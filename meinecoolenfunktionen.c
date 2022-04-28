@@ -118,14 +118,6 @@ int getWeekdayNumber(int day, int month, int year){
     }
 }
 
-int daysInYear(int year){
-    int sumOfDays = 0;
-    for (int i = 1; i <= 12; i++){
-        sumOfDays += get_days_for_month(i, year);
-    }
-    return sumOfDays;
-}
-
 int has53Weeks(int year){
     if(is_leapyear(year)){
         if((getWeekdayNumber(1, 1, year) == 3 && getWeekdayNumber(31, 12, year) == 4) || (getWeekdayNumber(1, 1, year) == 4 && getWeekdayNumber(31, 12, year) == 5)){
