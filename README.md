@@ -1,2 +1,2 @@
 # timelib
-Initial repository for a time library written in C.
+Programm zur Festellung des Wochentages, Nummer des Tages im Jahr und der entsprechenden Kalenderwoche.
