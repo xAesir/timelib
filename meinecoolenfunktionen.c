@@ -198,6 +198,8 @@ int has53Weeks(int year){
  * Sollte die Variable WeekNumber = 53 sein, das aktuelle Jahr allerdings keine 53 Kalenderwochen hat, so
  * liegt das Datum in der ersten Kalenderwoche des nächsten Jahres.
  * 
+ * https://en.wikipedia.org/wiki/ISO_week_date
+ * 
  * @param date 
  */
 
